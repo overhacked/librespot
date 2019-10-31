@@ -1182,7 +1182,7 @@ dependencies = [
  "dns-sd",
  "futures",
  "hmac",
- "hyper 0.11.27",
+ "hyper 0.12.35",
  "libmdns",
  "librespot-core",
  "librespot-playback",
