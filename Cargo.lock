@@ -468,7 +468,7 @@ checksum = "aafcde04e90a5226a6443b7aabdb016ba2f8307c847d524724bd9b346dd1a2d3"
 dependencies = [
  "atty",
  "humantime",
- "log 0.4.11",
+ "log",
  "termcolor",
 ]
 
@@ -597,7 +597,7 @@ dependencies = [
  "pin-utils",
  "proc-macro-hack",
  "proc-macro-nested",
- "slab 0.4.2",
+ "slab",
 ]
 
 [[package]]
@@ -788,8 +788,8 @@ dependencies = [
  "futures",
  "http",
  "indexmap",
- "log 0.4.11",
- "slab 0.4.2",
+ "log",
+ "slab",
  "string",
  "tokio-io",
 ]
@@ -876,33 +876,6 @@ dependencies = [
 
 [[package]]
 name = "hyper"
-version = "0.11.27"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "34a590ca09d341e94cddf8e5af0bbccde205d5fbc2fa3c09dd67c7f85cea59d7"
-dependencies = [
- "base64 0.9.3",
- "bytes",
- "futures",
- "futures-cpupool",
- "httparse",
- "iovec",
- "language-tags",
- "log 0.4.11",
- "mime",
- "net2",
- "percent-encoding",
- "relay",
- "time",
- "tokio-core",
- "tokio-io",
- "tokio-proto",
- "tokio-service",
- "unicase",
- "want 0.0.4",
-]
-
-[[package]]
-name = "hyper"
 version = "0.12.35"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9dbe6ed1438e1f8ad955a4701e9a944938e9519f6888d12d8558b645e247d5f6"
@@ -916,7 +889,7 @@ dependencies = [
  "httparse",
  "iovec",
  "itoa",
- "log 0.4.11",
+ "log",
  "net2",
  "rustc_version",
  "time",
@@ -928,7 +901,7 @@ dependencies = [
  "tokio-tcp",
  "tokio-threadpool",
  "tokio-timer",
- "want 0.2.0",
+ "want",
 ]
 
 [[package]]
@@ -940,7 +913,7 @@ dependencies = [
  "bytes",
  "futures",
  "http",
- "hyper 0.12.35",
+ "hyper",
  "tokio-io",
  "typed-headers",
 ]
@@ -1036,12 +1009,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "language-tags"
-version = "0.2.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a91d884b6667cd606bb5a69aa0c99ba811a115fc68915e7056ec08a46e93199a"
-
-[[package]]
 name = "lazy_static"
 version = "1.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1061,7 +1028,7 @@ checksum = "8d542c1a317036c45c2aa1cf10cc9d403ca91eb2d333ef1a4917e5cb10628bd0"
 dependencies = [
  "byteorder",
  "ogg",
- "smallvec 0.6.13",
+ "smallvec",
 ]
 
 [[package]]
@@ -1107,7 +1074,7 @@ dependencies = [
  "futures",
  "hostname",
  "if-addrs",
- "log 0.4.11",
+ "log",
  "multimap",
  "net2",
  "quick-error",
@@ -1133,14 +1100,13 @@ dependencies = [
  "futures",
  "getopts",
  "hex",
- "hyper 0.11.27",
  "librespot-audio",
  "librespot-connect",
  "librespot-core",
  "librespot-metadata",
  "librespot-playback",
  "librespot-protocol",
- "log 0.4.11",
+ "log",
  "num-bigint",
  "protobuf",
  "rand 0.7.3",
@@ -1165,7 +1131,7 @@ dependencies = [
  "lewton",
  "librespot-core",
  "librespot-tremor",
- "log 0.4.11",
+ "log",
  "num-bigint",
  "num-traits",
  "tempfile",
@@ -1182,12 +1148,12 @@ dependencies = [
  "dns-sd",
  "futures",
  "hmac",
- "hyper 0.12.35",
+ "hyper",
  "libmdns",
  "librespot-core",
  "librespot-playback",
  "librespot-protocol",
- "log 0.4.11",
+ "log",
  "num-bigint",
  "protobuf",
  "rand 0.7.3",
@@ -1211,11 +1177,11 @@ dependencies = [
  "futures",
  "hmac",
  "httparse",
- "hyper 0.12.35",
+ "hyper",
  "hyper-proxy",
  "lazy_static",
  "librespot-protocol",
- "log 0.4.11",
+ "log",
  "num-bigint",
  "num-integer",
  "num-traits",
@@ -1244,7 +1210,7 @@ dependencies = [
  "librespot-core",
  "librespot-protocol",
  "linear-map",
- "log 0.4.11",
+ "log",
  "protobuf",
 ]
 
@@ -1265,7 +1231,7 @@ dependencies = [
  "librespot-audio",
  "librespot-core",
  "librespot-metadata",
- "log 0.4.11",
+ "log",
  "portaudio-rs",
  "rodio",
  "sdl2",
@@ -1308,15 +1274,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c4da24a77a3d8a6d4862d95f72e6fdb9c09a643ecdb402d754004a557f2bec75"
 dependencies = [
  "scopeguard",
-]
-
-[[package]]
-name = "log"
-version = "0.3.9"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e19e8d5c34a3e0e2223db8e060f9e8264aeeb5c5fc64a4ee9965c062211c024b"
-dependencies = [
- "log 0.4.11",
 ]
 
 [[package]]
@@ -1388,10 +1345,10 @@ dependencies = [
  "iovec",
  "kernel32-sys",
  "libc",
- "log 0.4.11",
+ "log",
  "miow 0.2.1",
  "net2",
- "slab 0.4.2",
+ "slab",
  "winapi 0.2.8",
 ]
 
@@ -1401,7 +1358,7 @@ version = "0.1.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0840c1c50fd55e521b247f949c241c9997709f23bd7f023b9762cd561e935656"
 dependencies = [
- "log 0.4.11",
+ "log",
  "mio",
  "miow 0.3.5",
  "winapi 0.3.9",
@@ -1643,7 +1600,7 @@ dependencies = [
  "libc",
  "redox_syscall",
  "rustc_version",
- "smallvec 0.6.13",
+ "smallvec",
  "winapi 0.3.9",
 ]
 
@@ -1829,29 +1786,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "aa563d17ecb180e500da1cfd2b028310ac758de548efdd203e18f283af693f37"
 dependencies = [
  "proc-macro2 1.0.24",
-]
-
-[[package]]
-name = "rand"
-version = "0.3.23"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "64ac302d8f83c0c1974bf758f6b041c6c8ada916fbb44a609158ca8b064cc76c"
-dependencies = [
- "libc",
- "rand 0.4.6",
-]
-
-[[package]]
-name = "rand"
-version = "0.4.6"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "552840b97013b1a26992c11eac34bdd778e464601a4c2054b5f0bff7c6761293"
-dependencies = [
- "fuchsia-cprng",
- "libc",
- "rand_core 0.3.1",
- "rdrand",
- "winapi 0.3.9",
 ]
 
 [[package]]
@@ -2051,15 +1985,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8cab7a364d15cde1e505267766a2d3c4e22a843e1a601f0fa7564c0f82ced11c"
 
 [[package]]
-name = "relay"
-version = "0.1.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1576e382688d7e9deecea24417e350d3062d97e32e45d70b1cde65994ff1489a"
-dependencies = [
- "futures",
-]
-
-[[package]]
 name = "remove_dir_all"
 version = "0.5.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2253,21 +2178,9 @@ dependencies = [
 
 [[package]]
 name = "slab"
-version = "0.3.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "17b4fcaed89ab08ef143da37bc52adbcc04d4a69014f4c1208d6b51f0c47bc23"
-
-[[package]]
-name = "slab"
 version = "0.4.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c111b5bd5695e56cffe5129854aa230b39c93a305372fdbb2668ca2394eea9f8"
-
-[[package]]
-name = "smallvec"
-version = "0.2.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4c8cbcd6df1e117c2210e13ab5109635ad68a929fcbb8964dc965b76cb5ee013"
 
 [[package]]
 name = "smallvec"
@@ -2353,12 +2266,6 @@ dependencies = [
  "syn 0.15.44",
  "unicode-xid 0.1.0",
 ]
-
-[[package]]
-name = "take"
-version = "0.1.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b157868d8ac1f56b64604539990685fa7611d8fa9e5476cf0c02cf34d32917c5"
 
 [[package]]
 name = "tempfile"
@@ -2455,7 +2362,7 @@ dependencies = [
  "bytes",
  "futures",
  "iovec",
- "log 0.4.11",
+ "log",
  "mio",
  "scoped-tls",
  "tokio",
@@ -2504,7 +2411,7 @@ checksum = "57fc868aae093479e3131e3d165c93b1c7474109d13c90ec0dda2a1bbfff0674"
 dependencies = [
  "bytes",
  "futures",
- "log 0.4.11",
+ "log",
 ]
 
 [[package]]
@@ -2517,31 +2424,13 @@ dependencies = [
  "futures",
  "lazy_static",
  "libc",
- "log 0.4.11",
+ "log",
  "mio",
  "mio-named-pipes",
  "tokio-io",
  "tokio-reactor",
  "tokio-signal",
  "winapi 0.3.9",
-]
-
-[[package]]
-name = "tokio-proto"
-version = "0.1.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8fbb47ae81353c63c487030659494b295f6cb6576242f907f203473b191b0389"
-dependencies = [
- "futures",
- "log 0.3.9",
- "net2",
- "rand 0.3.23",
- "slab 0.3.0",
- "smallvec 0.2.1",
- "take",
- "tokio-core",
- "tokio-io",
- "tokio-service",
 ]
 
 [[package]]
@@ -2553,23 +2442,14 @@ dependencies = [
  "crossbeam-utils 0.7.2",
  "futures",
  "lazy_static",
- "log 0.4.11",
+ "log",
  "mio",
  "num_cpus",
  "parking_lot",
- "slab 0.4.2",
+ "slab",
  "tokio-executor",
  "tokio-io",
  "tokio-sync",
-]
-
-[[package]]
-name = "tokio-service"
-version = "0.1.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "24da22d077e0f15f55162bdbdc661228c1581892f52074fb242678d015b45162"
-dependencies = [
- "futures",
 ]
 
 [[package]]
@@ -2624,9 +2504,9 @@ dependencies = [
  "crossbeam-utils 0.7.2",
  "futures",
  "lazy_static",
- "log 0.4.11",
+ "log",
  "num_cpus",
- "slab 0.4.2",
+ "slab",
  "tokio-executor",
 ]
 
@@ -2638,7 +2518,7 @@ checksum = "93044f2d313c95ff1cb7809ce9a7a05735b012288a888b62d4434fd58c94f296"
 dependencies = [
  "crossbeam-utils 0.7.2",
  "futures",
- "slab 0.4.2",
+ "slab",
  "tokio-executor",
 ]
 
@@ -2650,7 +2530,7 @@ checksum = "e2a0b10e610b39c38b031a2fcab08e4b82f16ece36504988dcbd81dbba650d82"
 dependencies = [
  "bytes",
  "futures",
- "log 0.4.11",
+ "log",
  "mio",
  "tokio-codec",
  "tokio-io",
@@ -2667,19 +2547,13 @@ dependencies = [
  "futures",
  "iovec",
  "libc",
- "log 0.4.11",
+ "log",
  "mio",
  "mio-uds",
  "tokio-codec",
  "tokio-io",
  "tokio-reactor",
 ]
-
-[[package]]
-name = "try-lock"
-version = "0.1.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ee2aa4715743892880f70885373966c83d73ef1b0838a664ef0c76fffd35e7c2"
 
 [[package]]
 name = "try-lock"
@@ -2705,15 +2579,6 @@ name = "typenum"
 version = "1.12.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "373c8a200f9e67a0c95e62a4f52fbf80c23b4381c05a17845531982fa99e6b33"
-
-[[package]]
-name = "unicase"
-version = "2.6.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "50f37be617794602aabbeee0be4f259dc1778fabe05e2d67ee8f79326d5cb4f6"
-dependencies = [
- "version_check",
-]
 
 [[package]]
 name = "unicode-bidi"
@@ -2832,24 +2697,13 @@ dependencies = [
 
 [[package]]
 name = "want"
-version = "0.0.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a05d9d966753fa4b5c8db73fcab5eed4549cfe0e1e4e66911e5564a0085c35d1"
-dependencies = [
- "futures",
- "log 0.4.11",
- "try-lock 0.1.0",
-]
-
-[[package]]
-name = "want"
 version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b6395efa4784b027708f7451087e647ec73cc74f5d9bc2e418404248d679a230"
 dependencies = [
  "futures",
- "log 0.4.11",
- "try-lock 0.2.3",
+ "log",
+ "try-lock",
 ]
 
 [[package]]
